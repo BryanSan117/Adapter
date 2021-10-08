@@ -5,23 +5,23 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class alumno {
+public class Alumno {
 	
 	int carnet;
-	String mombres;
+	String nombres;
 	String apellidos; 
 	String correo;
 	
 	
-	public alumno() {
+	public Alumno() {
 		super();
 	}
 
 
-	public alumno(int carnet, String mombres, String apellidos, String correo) {
+	public Alumno(int carnet, String nombres, String apellidos, String correo) {
 		super();
 		this.carnet = carnet;
-		this.mombres = mombres;
+		this.nombres = nombres;
 		this.apellidos = apellidos;
 		this.correo = correo;
 	}
@@ -37,13 +37,13 @@ public class alumno {
 	}
 
 
-	public String getMombres() {
-		return mombres;
+	public String getNombres() {
+		return nombres;
 	}
 
 	@XmlAttribute
-	public void setMombres(String mombres) {
-		this.mombres = mombres;
+	public void setNombres(String nombres) {
+		this.nombres = nombres;
 	}
 
 
